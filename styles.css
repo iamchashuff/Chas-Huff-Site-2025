@@ -296,9 +296,55 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transform: none !important;
+        margin-top: 0px !important;
+        gap: 10px;
+        text-align: center;
+      }
+      
+      .hero-image img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin-top: 30px;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-text .subtitle {
+        font-size: 1rem;
+      }
+      
+      /* Fix social icons too */
+      .social-icons {
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1rem;
+        gap: 10px;
+      }
+    
+      nav a {
+        color: white;
+        font-size: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+      }
     }
-}
